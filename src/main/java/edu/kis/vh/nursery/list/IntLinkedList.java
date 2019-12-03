@@ -1,7 +1,7 @@
 package edu.kis.vh.nursery.list;
 
 public class IntLinkedList {
-
+// można sięprzełączać przez zakładki
     Node last;
     int i;
 
