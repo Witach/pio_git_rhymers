@@ -1,7 +1,7 @@
 package edu.kis.vh.nursery.list;
 
 public final class IntLinkedList {
-// można sięprzełączać przez zakładki
+    // można sięprzełączać przez zakładki
     private Node last;
     private int i;
 
@@ -39,6 +39,38 @@ public final class IntLinkedList {
         int ret = last.getValue();
         last = last.getPrev();
         return ret;
+    }
+
+    final class Node {
+
+        private int value;
+        private Node prev;
+        private Node next;
+
+        Node(int i) {
+            this.value = i;
+        }
+
+        public int getValue() {
+            return value;
+        }
+
+
+        public Node getPrev() {
+            return prev;
+        }
+
+        public void setPrev(Node prev) {
+            this.prev = prev;
+        }
+
+        public Node getNext() {
+            return next;
+        }
+
+        public void setNext(Node next) {
+            this.next = next;
+        }
     }
 
 }
